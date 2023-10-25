@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Binário</title>
+        <link rel="stylesheet" href="css/cssBinario.css">
+        <script src="jScript/jScriptBinario.js"></script>
+    </head>
+    <body class="bg">
+       <form id="formulario" autocomplete="off"> 
+            <label>
+                Converter para Binário:&nbsp;
+            </label>
+            <input type="radio" id="paraBinario" name="opc" onclick="teste(); somenteNumeros()">
+            <p> 
+                <label>
+                    Converter para Decimal:&nbsp;
+                </label>
+                <input type="radio" id="paraDecimal" name="opc" onclick="teste(); somenteNumeros()">
+            </p> 
+            <p>
+                <label>
+                    Valor:&nbsp;
+                </label>
+                <input type="text" id="numeroDigitado" placeholder="Digite um número" maxlength="8" onkeypress="return somenteNumeros()">
+            </p>
+            <p id="Resultado">
+            </p>
+       </form>   
+    </body>
+</html>
